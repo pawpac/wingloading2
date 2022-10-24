@@ -2,6 +2,8 @@ const sizeSlider = document.querySelector('.size-slider');
 
 const canopyDigits = document.querySelector('.canopy-digit');
 
+const canopy = document.querySelector('.canopy');
+
 canopyDigits.textContent = sizeSlider.value;
 
 let initialCanopySlider = parseInt(sizeSlider.value);
@@ -14,12 +16,11 @@ console.log(canopySize);
 sizeSlider.oninput = function() {
   canopyDigits.textContent = sizeSlider.value;
   let newCanopySlider = parseInt(sizeSlider.value);
-  console.log(initialCanopySlider);
-  console.log(newCanopySlider);
+
 
   canopySize = canopySize + ((newCanopySlider - initialCanopySlider) * 0.217391304);
 
-  console.log('canopy percent: ' + parseInt(canopySize));
+  canopy.style.width = parseInt(canopySize) + '%';
+
   initialCanopySlider = newCanopySlider;
-  // console.log(initialCanopySlider);
 }
