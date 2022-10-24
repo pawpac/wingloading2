@@ -1,0 +1,87 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+
+}
+
+.diver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.harness,
+.top,
+.fat,
+.buttom {
+  position: absolute;
+}
+
+.top {
+  z-index: 3;
+}
+
+.harness {
+  z-index: 4;
+}
+
+.fat,
+.canopy {
+  display: flex;
+  justify-content: center;
+
+}
+
+.harness-img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-img {
+  width: 100%;
+  height: 100%;
+}
+
+.fat-img {
+  width: 70%;
+  height: 70%;
+}
+
+.canopy-img {
+  width: 75%;
+  height:75%;
+  min-width: 242.28px;
+}
+
+.bottom-img {
+  width: 100%;
+  height: 100%;
+}
+
+.canopy {
+  height: 30%;
+  width: 100%;
+  min-height: 128px;
+}
+
+.lines {
+  height: 35%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.diver {
+  height: 35%;
+  width: 100%;
+  /* min-height: 150px; */
+}
