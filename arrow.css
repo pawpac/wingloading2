@@ -71,7 +71,7 @@ body {
 
 .canopy {
   height: 30%;
-  width: 100%;
+  width: 75%;
   min-height: 128px;
 }
 
@@ -215,3 +215,36 @@ body {
   height: 150px;
   background-image: linear-gradient(to top, rgba(136, 136, 136, 0), rgb(141, 141, 141), rgba(132, 132, 132, 0), rgb(188, 188, 188), rgba(100, 100, 100, 0));
 }
+
+h3 {
+  color:rgb(188, 188, 188);
+}
+
+.canopy-size-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.canopy-size {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.canopy-digit {
+ min-width: 40px;
+}
+
+.size-slider {
+  width: 50%;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
