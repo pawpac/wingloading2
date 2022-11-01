@@ -12,9 +12,32 @@ body {
   justify-content: center;
   align-items: center;
   height: 50%;
-  width: 455px;
+  max-width: 455px;
   min-width: 455px;
 
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.definitions {
+  width: 33.33%;
+  height: 50%;
+  background-color: wheat;
+}
+
+.closeup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 50%;
 }
 
 .diver {
@@ -59,7 +82,8 @@ body {
   height: 100%;
 }
 
-.fat-img {
+.fat-img,
+.fat-img-large {
   width: 85%;
   height: 85%;
 }
