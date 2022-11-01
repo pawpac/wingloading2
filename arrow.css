@@ -12,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 50%;
+  width: 455px;
+  min-width: 455px;
 
 }
 
