@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
 body {
+  font-family: 'Rajdhani', sans-serif;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(26, 26, 26), rgb(26, 26, 26), rgb(26, 26, 26), rgb(0, 0, 0));
 }
 
 .container {
@@ -12,8 +15,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 50%;
+  min-height: 492px;
   max-width: 455px;
   min-width: 455px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
 
 }
 
@@ -21,6 +28,7 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -29,15 +37,22 @@ body {
   width: 33.33%;
   height: 50%;
   background-color: wheat;
+  display: none;
 }
 
-.closeup {
+.display {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
-  height: 50%;
+  width: 80%;
+  height: 25%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  padding: 5px;
+  margin: 5px;
+background-color:  rgb(26, 26, 26);
 }
 
 .diver {
@@ -254,21 +269,26 @@ body {
   background-image: linear-gradient(to top, rgba(136, 136, 136, 0), rgb(141, 141, 141), rgba(132, 132, 132, 0), rgb(188, 188, 188), rgba(100, 100, 100, 0));
 }
 
+h1 {
+  margin-bottom: 100px;
+  color: rgb(165, 165, 165);
+}
+
 h3 {
   color:rgb(188, 188, 188);
+  padding: 0;
+  margin: 0;
 }
 
 .canopy-size-slider {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 
 .canopy-size {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .canopy-digit {
@@ -276,13 +296,31 @@ h3 {
 }
 
 .size-slider {
-  width: 50%;
+  width: 100%;
+}
+
+.exit-slider {
+  width: 100%;
+}
+
+.exit-weight-slider {
+  width: 100%;
 }
 
 .slider {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 20px;
 }
+
+.controls {
+  padding: 5px;
+  width: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  background-color: rgb(26, 26, 26);
+}
+
+
 
