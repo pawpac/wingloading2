@@ -31,6 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .definitions {
@@ -104,7 +105,7 @@ background-color:  rgb(26, 26, 26);
 }
 
 .canopy-img {
-  width: 100%;
+  width: 345.91px;
   height:100%;
   min-width: 242.28px;
 }
@@ -116,7 +117,7 @@ background-color:  rgb(26, 26, 26);
 
 .canopy {
   height: 30%;
-  width: 75%;
+  width: 100%;
   min-height: 128px;
 }
 
@@ -196,7 +197,7 @@ background-color:  rgb(26, 26, 26);
   height: 1px;
   display: flex;
   align-items: flex-end;
-  transform: skew(-40deg);
+  transform: skew(-35deg);
 }
 
 .line-three-point-right {
@@ -240,7 +241,7 @@ background-color:  rgb(26, 26, 26);
   height: 1px;
   display: flex;
   align-items: flex-end;
-  transform: skew(40deg);
+  transform: skew(35deg);
 }
 
 .line-three-point-left {
@@ -249,6 +250,14 @@ background-color:  rgb(26, 26, 26);
   display: flex;
   align-items: flex-end;
   transform: skew(30deg);
+}
+
+.line-four-point-left {
+  width: 1px;
+  height: 1px;
+  display: flex;
+  align-items: flex-end;
+  transform: skew(20deg);
 }
 
 .line-one-left {
@@ -264,6 +273,12 @@ background-color:  rgb(26, 26, 26);
 }
 
 .line-three-left {
+  width: 1px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgba(136, 136, 136, 0), rgb(141, 141, 141), rgba(132, 132, 132, 0), rgb(188, 188, 188), rgba(100, 100, 100, 0));
+}
+
+.line-four-left {
   width: 1px;
   height: 150px;
   background-image: linear-gradient(to top, rgba(136, 136, 136, 0), rgb(141, 141, 141), rgba(132, 132, 132, 0), rgb(188, 188, 188), rgba(100, 100, 100, 0));
@@ -320,6 +335,36 @@ h3 {
   border-width: 1px;
   border-color: grey;
   background-color: rgb(26, 26, 26);
+}
+
+@media screen and (max-width: 455px) {
+  .container {
+    /* width: 100vw; */
+    min-width: 0;
+    border-style: none;
+  }
+
+  .main-container {
+    justify-content: flex-start;
+  }
+
+  .canopy-img {
+    width: 254.55px;
+    min-width: 0;
+  }
+
+  /* .lines-point-left {
+    transform: rotate(12deg);
+  }
+  
+  .lines-point-right {
+    transform: rotate(-12deg);
+  } */
+
+  .line-one-right,
+  .line-one-left {
+    display: none;
+  }
 }
 
 

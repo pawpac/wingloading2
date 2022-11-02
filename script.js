@@ -2,7 +2,7 @@ const sizeSlider = document.querySelector('.size-slider');
 const exitSlider = document.querySelector('.exit-slider');
 const canopyDigits = document.querySelector('.canopy-digit');
 const exitDigits = document.querySelector('.exit-digit');
-const canopy = document.querySelector('.canopy');
+const canopy = document.querySelector('.canopy-img');
 const wingloading = document.querySelector('.wingloading-digit');
 const level = document.querySelector('.level-digit');
 
@@ -23,6 +23,7 @@ let canopySize = 75;
 
 let leftLinesRotation = 5;
 let rightLinesRotation = -5;
+
 let exitWeight = 85;
 
 sizeSlider.oninput = function() {
